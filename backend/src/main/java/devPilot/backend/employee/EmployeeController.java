@@ -70,6 +70,8 @@ public class EmployeeController {
             throw new ResponseStatusException(
                     HttpStatus.NOT_FOUND, "Employee not found");
         }
+
+        
         employeeRepository.deleteById(id);
     }
 }
