@@ -8,7 +8,9 @@ import org.springframework.security.access.prepost.PreAuthorize;
 
 import java.util.List;
 
+
 @RestController
+
 @RequestMapping("/api/employees")
 public class EmployeeController {
 
@@ -71,7 +73,7 @@ public class EmployeeController {
                     HttpStatus.NOT_FOUND, "Employee not found");
         }
 
-        
+
         employeeRepository.deleteById(id);
     }
 }
